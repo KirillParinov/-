@@ -9,7 +9,7 @@ public class Massiv1 {
 		
 	    int sum=0, n, arr[];
 	    Scanner in = new Scanner(System.in);
-	    System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г°Г Г§Г¬ГҐГ° Г¬Г Г±Г±ГЁГўГ ");
+	    System.out.println("Введите размер массива");
 	    n = in.nextInt();
 
 	    arr = new int [n];

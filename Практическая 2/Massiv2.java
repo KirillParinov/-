@@ -10,7 +10,7 @@ public class Massiv2 {
 		int[] x= new int [n];
 		int[] v= new int [n];
 		
-		//Г§Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ Г¬Г Г±Г±ГЁГўГ  ГЁ ГўГ»ГўГ®Г¤
+		//заполнение массива и вывод
 		for(int i=0; i<n;i++) {
 			x[i]=new Random().nextInt(20)-10;
 		}
@@ -19,7 +19,7 @@ public class Massiv2 {
 			System.out.print( i + " " );
 		}
 		
-		//Г§Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ ГўГ°ГҐГ¬ГҐГ­Г­Г®ГЈГ® Г¬Г Г±Г±ГЁГўГ 
+		//заполнение временного массива
 		for (int i=0; i<n; i++) {
 			if ( x[i] > 3 ) {
 				v[sum]=x[i];

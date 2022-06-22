@@ -16,18 +16,18 @@ public class Matrix4 {
 
 	int[][] matr = new int [n][n];
 	
-	//Г®ГЈГ°Г Г­ГЁГ·ГҐГ­ГЁГҐ Г°Г Г­Г¤Г®Г¬Г­Г»Гµ Г·ГЁГ±ГҐГ«
+	//ограничение рандомных чисел
 			int min = -10;
 			int max = 10;
 			
-	// Г§Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ Г¬Г ГІГ°ГЁГ¶Г»
+	// заполнение матрицы
 			for ( i = 0; i < n; i++) {
 			    for ( j = 0; j < n; j++) {
 			        matr[i][j]=new Random().nextInt(11) - 5;;
 			    }
 			}
 			
-	//ГўГ»ГўГ®Г¤ Г¬Г ГІГ°ГЁГ¶Г»
+	//вывод матрицы
 			for ( i = 0; i < n; i++) {
 			    for ( j = 0; j < n; j++) {
 			        System.out.print(matr[i][j] + "\t");
@@ -44,7 +44,7 @@ public class Matrix4 {
 				}
 			}
 			if (k==0) {
-				System.out.println("ГЌГҐ Г­Г Г©Г¤ГҐГ­Г® ГЇГ®Г«Г®Г¦ГЁГІГҐГ«ГјГ­Г»Гµ Г·ГЁГ±ГҐГ«");
+				System.out.println("Не найдено положительных чисел");
 			}
 			else {
 			System.out.print(sum / k);

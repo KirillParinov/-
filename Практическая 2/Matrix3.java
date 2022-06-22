@@ -7,23 +7,23 @@ public class Matrix3 {
 		Scanner in = new Scanner(System.in);
 		
 		int k,i,j,sum;
-		System.out.println("Paramitri matrix h ГЁ n:");
+		System.out.println("Paramitri matrix h и n:");
 		int n = in.nextInt();
 		int m = in.nextInt();
 		int[][] matr = new int [n][m];
 		
-		//Г®ГЈГ°Г Г­ГЁГ·ГҐГ­ГЁГҐ Г°Г Г­Г¤Г®Г¬Г­Г»Гµ Г·ГЁГ±ГҐГ«
+		//ограничение рандомных чисел
 				int min = 0;
 				int max = 100;
 				
-		// Г§Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ Г¬Г ГІГ°ГЁГ¶Г»
+		// заполнение матрицы
 				for ( i = 0; i < n; i++) {
 				    for ( j = 0; j < m; j++) {
 				        matr[i][j]=new Random().nextInt(max - min);
 				    }
 				}
 				
-		//ГўГ»ГўГ®Г¤ Г¬Г ГІГ°ГЁГ¶Г»
+		//вывод матрицы
 				for ( i = 0; i < n; i++) {
 				    for ( j = 0; j < m; j++) {
 				        System.out.print(matr[i][j] + "\t");
@@ -43,7 +43,8 @@ public class Matrix3 {
 						}
 						
 					}
-					System.out.println("Г‘Г°ГҐГ¤Г­ГҐГҐ ГЈГҐГ®Г¬ГҐГІГ°ГЁГ·ГҐГ±ГЄГ®ГҐ " + i + " Г±ГІГ®Г«ГЎГ¶Г  = " + Math.pow(sum, 1.0/k) );
+					System.out.println("Среднее геометрическое " + i + " столбца = " + Math.pow(sum, 1.0/k) );
 				}
 		}
 	}
+
